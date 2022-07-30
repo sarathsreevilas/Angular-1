@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'new-project';
+  // title = 'new-project';
+  public title ='MAD WorlD'
+  ngOnInit(){
+
+  }
+
+  data = {
+    tech1 : 'Angular',
+    tech2 : 'Node js',
+    programminglang : 'JS'
+  }
 }

@@ -7,24 +7,38 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'new-project';
-  public Str=""
+  public count=0
+  evenOrodd= "Even"
   ngOnInit(){
 
   }
 
-  functionCalling(){
+  increment(){
+    // this.count=this.count+1
+    this.count+=1
+    if (this.count % 2 == 0){
+      this.evenOrodd="Even"
+    }
+    else{
+      this.evenOrodd="Odd"
+    }
 
-this.Str="Yeah I will"
+  }
+
+  decrement(){
+
+    // this.count=this.count-1
+    this.count-=1
+    if (this.count % 2 == 0){
+      this.evenOrodd="Even"
+    }
+    else{
+      this.evenOrodd="Odd"
+    }
 
 
   }
 
-  function1Calling(){
-    this.Str=" I will think about it"
-    
-    console.log("Ooi")
-      }
-    
-
+ 
 
 }

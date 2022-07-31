@@ -7,14 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'new-project';
-  public title ='MAD WorlD'
+  public Str=""
   ngOnInit(){
 
   }
 
-  data = {
-    tech1 : 'Angular',
-    tech2 : 'Node js',
-    programminglang : 'JS'
+  functionCalling(){
+
+this.Str="Yeah I will"
+
+
   }
+
+  function1Calling(){
+    this.Str=" I will think about it"
+    
+    console.log("Ooi")
+      }
+    
+
+
 }

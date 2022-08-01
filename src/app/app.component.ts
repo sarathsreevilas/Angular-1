@@ -7,38 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'new-project';
-  public count=0
-  evenOrodd= "Even"
+ 
+public fruits=[
+{"name":"orange", "price": 100},//item
+{"name":"apple","price": 200},
+{"name":"mango","price": 300},
+{"name":"kiwi","price": 400},
+{"name":"banana","price": 500},
+{"name":"grapes","price": 600}
+
+]
+
+
   ngOnInit(){
 
   }
 
-  increment(){
-    // this.count=this.count+1
-    this.count+=1
-    if (this.count % 2 == 0){
-      this.evenOrodd="Even"
-    }
-    else{
-      this.evenOrodd="Odd"
-    }
-
-  }
-
-  decrement(){
-
-    // this.count=this.count-1
-    this.count-=1
-    if (this.count % 2 == 0){
-      this.evenOrodd="Even"
-    }
-    else{
-      this.evenOrodd="Odd"
-    }
-
-
-  }
-
+ 
  
 
 }

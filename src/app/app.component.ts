@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { ApiCallService } from './api-call.service';
 
 @Component({
   selector: 'app-root',
@@ -7,23 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'new-project';
- 
-public fruits=[
-{"name":"orange", "price": 100},//item
-{"name":"apple","price": 200},
-{"name":"mango","price": 300},
-{"name":"kiwi","price": 400},
-{"name":"banana","price": 500},
-{"name":"grapes","price": 600}
-
-]
-
-
+  constructor(private getApi :ApiCallService){ }
+ postArray=[]
   ngOnInit(){
 
-  }
+  
+this.getApi.getPost().subscribe((res) => {
+  this.postArray=res
 
+   console.log(this.postArray);
+  
+})
  
- 
-
+}
 }

@@ -1,13 +1,11 @@
-<table>
-    <thead>
-        <th>Name</th>
-        <th>price</th>
-    </thead>
-    <tbody *ngFor="let item of fruits">
-        <tr *ngIf="item.price<400">
-            <td>{{item.name}}</td>
-            <td>{{item.price}}</td>
-        </tr>
-        
-    </tbody>
-</table>
+<div>
+
+    <h3>API calling</h3>
+
+
+<ul *ngFor="let item of postArray">
+    console.log(item.title)
+    <!-- <li>{{item.title}}</li> -->
+</ul>
+
+</div>
